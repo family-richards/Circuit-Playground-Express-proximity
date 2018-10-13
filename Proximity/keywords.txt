@@ -1,0 +1,2 @@
+Proximity	KEYWORD1
+close	KEYWORD2
