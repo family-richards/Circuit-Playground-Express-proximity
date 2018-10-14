@@ -24,5 +24,11 @@ void loop() {
     Serial.print("Not close to object, threshold is ");
     Serial.println(String(prox.getThreshold()));
   }
+  if (Serial.available()) {
+    int num = Serial.parseInt();
+    prox.setThreshold(num);
+    Serial.print("Changed threshold to ");
+    Serial.println(num);
+  }
   delay(250);
 }
