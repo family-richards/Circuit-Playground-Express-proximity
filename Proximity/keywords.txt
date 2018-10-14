@@ -1,3 +1,0 @@
-Proximity	KEYWORD1
-close	KEYWORD2
-setup	KEYWORD2
