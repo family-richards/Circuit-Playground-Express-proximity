@@ -63,7 +63,7 @@ long lastActivation;
 void loop() {
   if (CircuitPlayground.slideSwitch()) {
     //Run if mode is proximity
-    //Turn of LED to show proximity mode
+    //Turn off LED to show proximity mode
     digitalWrite(13, LOW);
     //Don't spend too much time with IR LED on
     delay(200);
