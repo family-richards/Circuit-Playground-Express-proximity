@@ -1,5 +1,0 @@
-Proximity	KEYWORD1
-close	KEYWORD2
-begin	KEYWORD2
-getThreshold	KEYWORD2
-setThreshold	KEYWORD2
