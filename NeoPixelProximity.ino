@@ -102,6 +102,8 @@ void loop() {
         //Haven't been close to object within 10 seconds
         off();
         prev = false;
+      } else {
+        on();
       }
     }
   } else {
