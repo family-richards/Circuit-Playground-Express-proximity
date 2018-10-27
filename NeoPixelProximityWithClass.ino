@@ -94,7 +94,7 @@ void loop() {
     }
     if (CircuitPlayground.leftButton()) {
       //Manual turn off light
-      lastActivation = millis() - 29000;
+      lastActivation = millis() - 31000;
     }
   } else {
     //Manual mode, so show LED
