@@ -92,10 +92,6 @@ void loop() {
         on();
       }
     }
-    if (CircuitPlayground.leftButton()) {
-      //Manual turn off light
-      lastActivation = millis() - 31000;
-    }
   } else {
     //Manual mode, so show LED
     digitalWrite(13, HIGH);
