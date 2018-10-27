@@ -79,12 +79,12 @@ void loop() {
       }
     } else {
       //Not close to object
-      if (millis() - lastActivation < 30000 && millis() - lastActivation > 29700) {
-        //Been close to object in 29700-30000 milliseconds
+      if (millis() - lastActivation < 10000 && millis() - lastActivation > 9700) {
+        //Been close to object in 9700-10000 milliseconds
         mid();
         prev = false;
-      } else if (millis() - lastActivation > 30000) {
-        //Haven't been close to object within 30 seconds
+      } else if (millis() - lastActivation > 10000) {
+        //Haven't been close to object within 10 seconds
         off();
         prev = false;
       } else {
@@ -95,6 +95,7 @@ void loop() {
   } else {
     //Manual mode, so show LED and push back lastActivation
     lastActivation = -50000;
+    digitalWrite(13, HIGH);
     if (CircuitPlayground.rightButton()) {
       //On button is pressed
       isOn = true;
