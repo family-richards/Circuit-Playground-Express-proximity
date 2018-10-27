@@ -87,6 +87,9 @@ void loop() {
         //Haven't been close to object within 10 seconds
         off();
         prev = false;
+      } else {
+        //Fix bug for when you only activate the IR sense in 1 loop so the NeoPixels are at mid bright for 9.75 seconds
+        on();
       }
     }
   } else {
