@@ -94,12 +94,12 @@ void loop() {
       }
     } else {
       //Not close to object
-      if (millis() - lastActivation < 10000 && millis() - lastActivation > 9700) {
-        //Been close to object in 9700-10000 milliseconds
+      if (millis() - lastActivation < 30000 && millis() - lastActivation > 29700) {
+        //Been close to object in 29700-30000 milliseconds
         mid();
         prev = false;
-      } else if (millis() - lastActivation > 10000) {
-        //Haven't been close to object within 10 seconds
+      } else if (millis() - lastActivation > 30000) {
+        //Haven't been close to object within 30 seconds
         off();
         prev = false;
       } else {
