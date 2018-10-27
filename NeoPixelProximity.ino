@@ -103,7 +103,7 @@ void loop() {
         off();
         prev = false;
       } else {
-        //Fix bug for when you only activate the IR sense in 1 loop so the NeoPixels are at mid bright for 9.75 seconds
+        //Fix bug for when you only activate the IR sense in 1 loop so the NeoPixels are at mid bright for the time
         on();
       }
     }
