@@ -79,16 +79,16 @@ void loop() {
       }
     } else {
       //Not close to object
-      if (millis() - lastActivation < 10000 && millis() - lastActivation > 9700) {
-        //Been close to object in 9700-10000 milliseconds
+      if (millis() - lastActivation < 30000 && millis() - lastActivation > 29700) {
+        //Been close to object in 29700-30000 milliseconds
         mid();
         prev = false;
-      } else if (millis() - lastActivation > 10000) {
-        //Haven't been close to object within 10 seconds
+      } else if (millis() - lastActivation > 30000) {
+        //Haven't been close to object within 30 seconds
         off();
         prev = false;
       } else {
-        //Fix bug for when you only activate the IR sense in 1 loop so the NeoPixels are at mid bright for 9.75 seconds
+        //Fix bug for when you only activate the IR sense in 1 loop so the NeoPixels are at mid bright for the time
         on();
       }
     }
