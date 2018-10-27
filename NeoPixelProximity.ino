@@ -108,8 +108,8 @@ void loop() {
       }
     }
   } else {
-    //Manual mode, so show LED
-    digitalWrite(13, HIGH);
+    //Manual mode, so show LED and push back lastActivation
+    lastActivation = -50000;
     if (CircuitPlayground.rightButton()) {
       //On button is pressed
       isOn = true;
