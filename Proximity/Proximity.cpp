@@ -39,6 +39,3 @@ int Proximity::getThreshold() {
 int Proximity::lastDist() {
 	return IR;
 }
-
-//Declare Proximity object
-Proximity prox;
