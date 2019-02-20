@@ -2,7 +2,7 @@
 #include <Proximity.h>
 
 #if !defined(ARDUINO_SAMD_CIRCUITPLAYGROUND_EXPRESS)
-#error "Infrared support is only for the Circuit Playground Express, it doesn't work with the Classic version"
+#error "Infrared support is only for the Circuit Playground Express, it doesn't work with other boards."
 #endif
 Proximity prox;
 void setup() {
